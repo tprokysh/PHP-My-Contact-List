@@ -32,7 +32,8 @@ body {
 
 .add,
 .delete,
-.edit{
+.edit,
+.save{
     width: 90px;
     text-align: center;
     border-radius: 5px;
@@ -56,18 +57,21 @@ body {
     background-color: lightcoral;
 }
 
-.edit {
+.edit,
+.save{
     background-color: lightskyblue;
 }
 
 .add a,
 .delete a,
-.edit a{
+.edit a,
+.save a{
     color: black;
     text-decoration: none;
 }
 
-.contact {
+.contact,
+.edit-contact{
     height: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -85,4 +89,8 @@ body {
     height: 100%;
     min-height: 80px;
     max-height: 120px;
+}
+
+.contact-form input[type="submit"] {
+    display: none;
 }
