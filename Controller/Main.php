@@ -3,6 +3,6 @@
 class Main
 {
     public function CreateView($url) {
-        require 'frontend/'. "$url" . '.html';
+        require 'View/'. "$url" . '.php';
     }
 }

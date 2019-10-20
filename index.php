@@ -1,4 +1,4 @@
 <?php
 session_start();
-include_once 'backend/autoloader.php';
-require 'backend/Routes.php';
+include_once 'autoloader.php';
+require 'Routes.php';
