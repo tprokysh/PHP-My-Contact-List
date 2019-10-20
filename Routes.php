@@ -1,5 +1,9 @@
 <?php
 
 Route::set('index.php', function () {
-    (new Main)->CreateView('index');
+    (new Contacts)->CreateView('index');
+});
+
+Route::set('api.php', function () {
+    (new Main)->CreateApi('api');
 });
