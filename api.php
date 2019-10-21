@@ -10,7 +10,7 @@ if ($action == 'read') {
     $result = pg_query($db, 'SELECT * FROM contacts ORDER BY id DESC');
     $contact = array();
     while ($row = pg_fetch_assoc($result)) {
-        array_push($contact, $row);
+        $contact[] = $row;
     }
     $res['contacts'] = $contact;
 }
